@@ -1,0 +1,18 @@
+# turn on redirection
+RewriteEngine on
+
+# forcing https
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{SERVER_PORT} 80
+
+# http redirects to https
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.krddy.com/$1 [L,R=301]
+
+# non-www redirects to www
+RewriteCond %{HTTP_HOST} ^krddy.com [nc]
+RewriteRule ^(.*)$ https://www.krddy.com/$1 [L,R=301]
+
+# redirect index.html to its folder
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ https://www.krddy.com/$1 [R=301,L]
