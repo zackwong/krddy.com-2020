@@ -1,0 +1,21 @@
+---
+layout: pages
+---
+<div class="container">
+  <div class="blog-post-section">
+    <div class="text-center title-4 text-black">{{ page.title }}</div>
+    <div class="blog-post-info">{{ page.date | date:"%Y年%m月%d日" }}</div>
+    <div class="text-indent-2">
+      {{ content }}
+    </div>
+  </div>
+  <p class="title-4 text-center margin-top-40 margin-btm-20"><a data-title="行业资讯" href="{{ site.url }}/news/">更多新闻</a></p>{% for post in site.categories["news"] limit:4 %}
+  <div class="news-sec margin-btm-30">
+    <div class="news-desc">
+      <p class="blog-post-title text-center margin-top-20"><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></p>
+      <span class="news-post-cat text-center">{{ post.date | date:"%Y年%m月%d日" }}</span>
+      <p class="text-center">{{ post.description }}</p>
+      <p class="text-center"><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="btn btn-blue btn-lg">阅读全文</a></p>
+    </div>
+  </div>{% endfor %}
+</div>

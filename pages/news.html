@@ -1,0 +1,15 @@
+---
+layout: pages
+permalink: /news/
+title: 新闻中心
+keywords: 张力控制器,纠偏控制器,超声波纠偏,张力检测器,跟线纠偏
+description: 张力控制器、纠偏控制器、超声波纠偏、张力检测器、跟线纠偏专业自主研发生产与销售厂家凯瑞达KRD为企业提供最新最快的纠偏卷材控制行业新闻资讯。
+---
+{% for post in site.categories["news"] %}<div class="news-sec margin-btm-30">
+  <div class="news-desc">
+    <p class="blog-post-title text-center margin-top-20"><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></p>
+    <span class="news-post-cat text-center">{{ post.date | date:"%Y年%m月%d日" }}</span>
+    <p class="text-center">{{ post.description }}</p>
+    <p class="text-center"><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="btn btn-blue btn-lg">阅读全文</a></p>
+  </div>
+</div>{% endfor %}

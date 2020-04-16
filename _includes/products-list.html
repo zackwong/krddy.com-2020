@@ -1,0 +1,13 @@
+<div class="row">{% for post in site.categories["products"] %}{% if post.type == page.type %}
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="shop-item">
+      <div class="shop-thumbnail">
+        <a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="item-link"></a>
+        <mip-img src="{{ site.url }}/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></mip-img>
+      </div>
+      <div class="shop-item-details {% if page.layout == 'products-article' %}bg-white{% endif %}">
+        <p class="shop-item-title"><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}">{{ post.proname }}<br>{{ post.model }}</a></p>
+      </div>
+    </div>
+  </div>{% endif %}{% endfor %}
+</div>

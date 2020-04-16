@@ -1,0 +1,93 @@
+---
+layout: default
+---
+<div class="bg-light-blue">
+  <ol class="breadcrumb container">
+    <li><a href="{{ site.url }}">首页</a></li>
+    <li>/</li>{% if page.layout == 'products-article' or page.layout == 'news-article' %}
+    <li><a href="{{ site.url }}/{{ page.type-en }}/">{{ page.type }}</a></li>
+    <li>/</li>{% endif %}
+    <li class="active">{{ page.title }}</li>
+  </ol>
+</div>{% if page.category == 'products' %}
+{{ content }}{% else %}
+<div class="margin-top-58"></div>
+<div class="container">
+  {{ content }}
+</div>{% endif %}
+<div class="margin-top-40"></div>{% if page.title == '张力控制器' or page.title == '张力传感器' or page.title == '张力执行器' %}
+<div class="bg-dark">
+  <div class="container">
+    <p class="title-3 text-black margin-top-40 margin-btm-30 text-center">张力控制器系统原理</p>
+    <p class="title-4 text-black margin-btm-20">何为张力控制系统?</p>
+    <p><span class="text-black"><b>张力概念：</b></span>是一种实现恒张力或者锥度张力控制的自动控制系统，其作用主要是实现辊间的同步,收卷和放卷的均匀控制。</p>
+    <p><span class="text-black"><b>工作原理：</b></span>根据环路可分为开环，闭环或自由环张力控制系统;根据对不同卷材的监测方式又可分为超声波式、浮辊式、跟踪臂式等控制系统。</p>
+    <p><span class="text-black"><b>系统构成：</b></span>主要由张力控制器、张力检测器、制动器和离合器构成。</p>
+    <p><span class="text-black"><b>系统分类：</b></span>直接张力控制法、间接张力控制法。</p>
+    <p><span class="text-black"><b>控制方式：</b></span>手动控制、半自动方式、全自动方式。</p>
+    <p class="title-4 text-black margin-top-30 margin-btm-20">张力控制系统的应用</p>
+    <p><span class="text-black"><b>适用行业：</b></span>印刷、包装、造纸、无纺布、锂电池、太阳能、橡胶轮胎、纺织、冶金等。</p>
+    <p><span class="text-black"><b>适用卷材：</b></span>卷简纸、薄膜、金属箔、胶片、皮革、无纺布、织布等卷绕性材料。</p>
+    <p><span class="text-black"><b>适用设备：</b></span></p>
+    <p>印刷包装：柔印机、凹印机、轮转印刷机、标签印刷机、分切机、涂布机、复合机、检品机、模切机、吹膜机、制袋机等。</p>
+    <p>无纺布：卫生布设备、卫生护垫生产线、婴儿纸尿裤生产线、医用辅料生产线等。</p>
+    <p>锂电池：极片涂布机、极片轧机、分切机、卷绕机等。</p>
+    <p>橡胶轮胎：挤出机、帘布生产线、压廷机、裁断机、成型。</p>
+    <mip-img popup src="{{ site.url }}/images/products/tension-control-systems.jpg" alt="张力控制器系统"></mip-img>
+    <div class="margin-btm-60"></div>
+  </div>
+</div>{% endif %}{% if page.title == '纠偏控制器' or page.title == '纠偏传感器' or page.title == '纠偏执行器' or page.title == '一体机' %}
+<div class="bg-dark">
+  <div class="container">
+    <p class="title-3 text-black margin-top-40 margin-btm-30 text-center">纠偏控制系统原理</p>
+    <p class="title-4 text-black margin-btm-20">何为纠偏控制系统?</p>
+    <p><span class="text-black"><b>纠偏概念：</b></span>自动纠正卷材横向偏差的自动化闭环系统。</p>
+    <p><span class="text-black"><b>工作原理：</b></span>纠偏传感器检测卷材边缘、线条或色块的相对位置，比较检测值与设定值偏差量，经过控制器程序计算后转换成成比例的信号绐电动驱动器进行纠正。</p>
+    <p><span class="text-black"><b>系统构成：</b></span>控制器、检边/检线传感器、电动驱动器、纠偏机构等部件。</p>
+    <p><span class="text-black"><b>系统分类：</b></span>收放卷纠偏系统、行进中纠偏机构(可定制)。</p>
+    <p><span class="text-black"><b>检测方式：</b></span>检边、检线、对中。</p>
+    <p class="title-4 text-black margin-top-30 margin-btm-20">纠偏控制系统的应用</p>
+    <p><span class="text-black"><b>适用行业：</b></span>印刷、包装、造纸、无纺布、锂电池、太阳能、橡 胶轮胎、纺织、冶金等。</p>
+    <p><span class="text-black"><b>适用卷材：</b></span>卷筒纸、薄膜、金属箔、胶片、皮革、无纺布、织布等卷绕性材料。</p>
+    <p><span class="text-black"><b>适用设备：</b></span></p>
+    <p>印刷包装：柔印机、凹印机、轮转印刷机、标签印刷机、分切机、涂布机、复合机、检品机、模切机、吹膜机、制袋机等。</p>
+    <p>无纺布：卫生布设备、卫生护垫生产线、婴儿纸尿裤生产线、医用辅料生产线等。</p>
+    <p>锂电池：极片涂布机、极片轧机、分切机、卷绕机等。</p>
+    <p>橡胶轮胎：挤出机、帘布生产线、压廷机、裁断机、成型机等。</p>
+    <p class="title-4 text-black margin-top-30 margin-btm-20">纠偏控制系统原理图</p>
+    <mip-img popup src="{{ site.url }}/images/products/correction-system.jpg" alt="纠偏控制系统原理图"></mip-img>
+    <p class="title-4 text-black margin-top-30 margin-btm-20">纠偏系统的三种工作模式</p>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <mip-img popup src="{{ site.url }}/images/products/correction-system-gzms-1.jpg" alt="纠偏系统收料模式"></mip-img>
+        <p><span class="text-center text-black"><b>收料模式</b></span></p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <mip-img popup src="{{ site.url }}/images/products/correction-system-gzms-2.jpg" alt="纠偏系统放料模式"></mip-img>
+        <p><span class="text-center text-black margin-top-10"><b>放料模式</b></span></p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <mip-img popup src="{{ site.url }}/images/products/correction-system-gzms-3.jpg" alt="纠偏系统中间导向模式"></mip-img>
+        <p><span class="text-center text-black margin-top-10"><b>中间导向模式</b></span></p>
+      </div>
+    </div>
+    <p class="title-4 text-black margin-top-30 margin-btm-20">纠偏系统的三种检测控制方式</p>
+    <p><span class="text-black"><b>LPC (Line Position Controller)</b></span></p>
+    <p>对印刷在卷料边缘的标记线进行检测的纠偏控制称之为LPC。LPC的纠偏传感器有对不连续的线标志、颜色特别浅的线标志、特别细小的线标志都能跟踪控制的特点。具体标记应用见下图：</p>
+    <mip-img class="margin-btm-20" popup src="{{ site.url }}/images/products/correction-system-lpc.jpg" alt="纠偏系统控制方式LPC"></mip-img>
+    <p><span class="text-black"><b>EPC (Edge Position Controller)</b></span></p>
+    <p>对材料边缘及图案的深浅分界线等进行检测跟踪的控制系统称之为EPC。具体应用如下：</p>
+    <mip-img class="margin-btm-20" popup src="{{ site.url }}/images/products/correction-system-epc.jpg" alt="纠偏系统控制方式EPC"></mip-img>
+    <p><span class="text-black"><b>CPC (Centering Position Controller)</b></span></p>
+    <p>通过对材料的两个边缘（齐或不齐）的检测，自动实现对材料中心的跟踪控制系统称之CPC。具体应用如下：</p>
+    <mip-img class="margin-btm-20" popup src="{{ site.url }}/images/products/correction-system-cpc.jpg" alt="纠偏系统控制方式CPC"></mip-img>
+    <div class="margin-btm-60"></div>
+  </div>
+</div>{% endif %}{% if page.layout == 'products-article' %}
+<div class="bg-dark">
+  <div class="container">
+    <p class="title-3 text-black margin-top-40 margin-btm-30 text-center">{{ page.type }}</p>
+    {% include products-list.html %}
+    <div class="margin-btm-40"></div>
+  </div>
+</div>{% endif %}
