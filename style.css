@@ -745,7 +745,9 @@ table th[class*="col-"] {
 .margin-btm-70 {
   margin-bottom: 70px;
 }
-
+.pr-10 {
+  padding-right: 10px;
+}
 /*buttons*/
 .btn {
   display: inline-block;
@@ -954,18 +956,6 @@ table th[class*="col-"] {
 .footer a {
   color: #ffffff;
 }
-.post-list li a {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 14px;
-  display: block;
-  padding: 8px 0;
-  border-bottom: 1px solid #ffffff;
-}
-.post-list li a:hover, a:focus {
-  color: #ffffff;
-  text-decoration: none;
-}
 .footer-bottom {
   border-top: 1px solid #ffffff;
   padding-top: 20px;
@@ -1008,6 +998,9 @@ table th[class*="col-"] {
 }
 .fa-weixin:before {
   content: "\f1d7";
+}
+.fa-angle-double-right:before {
+  content: "\f101";
 }
 @font-face {
   font-family: 'Font Awesome 5 Brands';
